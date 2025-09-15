@@ -1,0 +1,23 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.mark {
+    text-decoration: underline;
+}
+
+.highlight {
+    background: orange;
+}
+
+.emphasis {
+    color: red;
+    font-weight: bold;
+}
