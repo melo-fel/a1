@@ -21,3 +21,17 @@ body {
     color: red;
     font-weight: bold;
 }
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
