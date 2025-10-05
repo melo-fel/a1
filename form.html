@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Assignment</title>
+  <style>
+    label { display: block; margin-top: 10px; }
+    .error { color: red; }
+    .warning { color: orange; }
+  </style>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="userForm" onsubmit="return validateForm();">
+
+    <label id="lblUsername">Username:</label>
+    <input type="text" id="username"><br>
+
+    <label id="lblEmail">Email:</label>
+    <input type="text" id="email"><br>
+
+    <label id="lblPhone">Phone Number:</label>
+    <input type="text" id="phone"><br>
+
+    <label id="lblPassword">Password:</label>
+    <input type="password" id="password"><br>
+
+    <label id="lblConfirm">Confirm Password:</label>
+    <input type="password" id="confirmPassword"><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Other">Other<br>
+
+    <label>Age Group:</label>
+    <select id="ageGroup">
+      <option value="">--Select--</option>
+      <option value="21">21 years old</option>
+      <option value="21-25">21 – 25 years old</option>
+      <option value="26-35">26 – 35 years old</option>
+      <option value="36-50">36 – 50 years old</option>
+      <option value="50+">50 years old</option>
+    </select><br>
+
+    <label>Music Genre:</label>
+    <input type="checkbox" name="music" value="Pop">Pop
+    <input type="checkbox" name="music" value="Hip-hop">Hip-hop
+    <input type="checkbox" name="music" value="Jazz">Jazz
+    <input type="checkbox" name="music" value="Rock">Rock
+    <input type="checkbox" name="music" value="Classical">Classical
+    <input type="checkbox" name="music" value="Country">Country<br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset" onclick="clearWarnings();">Clear</button>
+  </form>
+
+  <script src="validation.js"></script>
+</body>
+</html>
