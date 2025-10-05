@@ -56,6 +56,14 @@
     <button type="reset" onclick="clearWarnings();">Clear</button>
   </form>
 
+    <div id="explanation" style="margin-top: 20px;">
+    <h3>Validation Legend</h3>
+    <p><span style="color:red; font-weight:bold;">Red:</span> Field is required but empty.</p>
+    <p><span style="color:orange; font-weight:bold;">Orange:</span> Field input is invalid (does not meet format rules).</p>
+    <p><span style="color:black; font-weight:bold;">Note:</span> All validations are done using JavaScript regular expressions.</p>
+  </div>
+
+
   <script src="validation.js"></script>
   <br>
   <a href="index.html">Back to Index Page</a>
